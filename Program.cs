@@ -32,7 +32,7 @@ namespace CsvToSql
             }
             con.Close();
             System.Console.WriteLine("****** Finished ******");
-            Console.ReadKey();
+            Console.Read();
         }
 
         private static void UpdateRecords(string OID, string HAZARDTYPE, SqlConnection con)
