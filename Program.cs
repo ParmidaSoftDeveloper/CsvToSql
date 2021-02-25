@@ -29,7 +29,7 @@ namespace CsvToSql
                 var HAZARDTYPE = textpart[1].Replace("\r", "");
                 UpdateRecords(OID, HAZARDTYPE, con);
                 System.Console.WriteLine("Updated : " + (i++) + "    at : " + DateTime.Now);
-            }
+            } 
             con.Close();
             System.Console.WriteLine("****** Finished ******");
             Console.Read();
