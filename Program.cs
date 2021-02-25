@@ -28,10 +28,11 @@ namespace CsvToSql
                 var OID = textpart[0];
                 var HAZARDTYPE = textpart[1].Replace("\r", "");
                 UpdateRecords(OID, HAZARDTYPE, con);
-                System.Console.WriteLine("Updated : " + i++);
+                System.Console.WriteLine("Updated : " + (i++) + "    at : " + DateTime.Now);
             }
             con.Close();
             System.Console.WriteLine("****** Finished ******");
+            Console.ReadKey();
         }
 
         private static void UpdateRecords(string OID, string HAZARDTYPE, SqlConnection con)
